@@ -2,6 +2,9 @@ import AppLayout from '../layouts/Layout'
 
 const MainPage = () => {
 
+  const input = document.getElementById('1');
+  // const value = input.value;
+  console.log(input);
 
   const info = '3 10';
   const marks = '1 2 3 4 5 6 7 8 9 10';
@@ -12,9 +15,6 @@ const MainPage = () => {
 
   let arr = arrayst.map(d => Number(d))
   let data = r.map(d => Number(d))
-
-
-
 
 
   let RLena = 0;
@@ -49,7 +49,10 @@ const MainPage = () => {
   return (
     <AppLayout>
       <div className='max-w-7xl px-6 lg:px-8'>
-        Ого
+        <p>условия:</p>
+        <input type="numb" id='1' defaultValue="3 10" />
+        <p>метки:</p>
+        <input type="numb" id='2' defaultValue="1 2 3 4 5 6 7 8 9 10" />
       </div>
     </AppLayout>
   )
