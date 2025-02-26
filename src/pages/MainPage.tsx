@@ -21,25 +21,22 @@ const MainPage = () => {
   let RSasha = 0;
 
 
-    for (let i = 0; i < arr.length; i++) {
-      if(1<= data[0] || data[0] <= 1000 || 1 <= data[1] || data[1] <= Math.pow(10, 6)){
-      } else {
-        console.log("error")
-        break;
-      }
+  for (let i = 0; i < arr.length; i++) {
+    if (1 <= data[0] || data[0] <= 1000 && 1 <= data[1] || data[1] <= Math.pow(10, 6)) {
 
-      if (RLena == data[0] || RSasha == data[0]){
+      if (RLena == data[0] || RSasha == data[0]) {
         break;
-      }else if (arr[i] % 5 == 0 && arr[i] % 3 == 0 || arr[i] % 3 != 0 && arr[i] % 5 != 0) {
+      } else if (arr[i] % 5 == 0 && arr[i] % 3 == 0 || arr[i] % 3 != 0 && arr[i] % 5 != 0) {
         continue;
       } else if (arr[i] % 5 == 0) {
         RLena++;
       } else if (arr[i] % 3 == 0) {
         RSasha++;
+      } else {
+        console.log("error")
       }
     }
-
-
+  }
 
   if (RLena > RSasha) {
     console.log("Lena")
@@ -48,9 +45,6 @@ const MainPage = () => {
   } else if (RLena = RSasha) {
     console.log("tie")
   }
-
-
-
 
   return (
     <AppLayout>
