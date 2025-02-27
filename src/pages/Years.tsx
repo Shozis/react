@@ -1,22 +1,24 @@
 import React from "react";
 
-let year = 0;
-
-if (year % 4 == 0){
-    console.log("Год високосный")
-} else{
-    console.log("Год не високосный")
- 
-}
-
-
 
 const Years = () => {
-return(
-<div>
+    let year = 0;
+    const [WatchYear, setWatchYear] = React.useState("2025");
 
-</div>
-)}
+    if (Number(WatchYear) % 4 == 0) {
+        console.log("Год високосный")
+    } else if (Number(WatchYear) % 100 != 0) {
+        console.log("Год не високосный")
+    } else if (Number(WatchYear) % 400 == 0) {
+        console.log("Год високосный")
+    }
+
+    return (
+        <div>
+            <input type="numb" onChange={(e) => setWatchYear(e.target.value)} id='1' defaultValue={WatchYear} />
+        </div>
+    )
+}
 
 
 
