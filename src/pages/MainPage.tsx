@@ -1,5 +1,5 @@
 import React from 'react';
-import AppLayout from '../layouts/Layout'
+
 
 const MainPage = () => {
   const [WatchData, setWatchData] = React.useState("");
@@ -43,14 +43,13 @@ const MainPage = () => {
   }
 
   return (
-    <AppLayout>
+
       <div className='max-w-7xl px-6 lg:px-8'>
         <p>условия:</p>
         <input type="numb" onChange={(e) => setWatchData(e.target.value)} id='1' defaultValue="3 10" />
         <p>метки:</p>
         <input type="numb" onChange={(e) => setWatcharr(e.target.value)} id='2' defaultValue="1 2 3 4 5 6 7 8 9 10" />
       </div>
-    </AppLayout>
   )
 }
 export default MainPage;
