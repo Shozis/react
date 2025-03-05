@@ -2,7 +2,6 @@ import React from "react";
 
 
 const Massive = () => {
-    debugger;
 
     const [WatchMassive, setWatchMassive] = React.useState(''); // <- Начальное условие забываешь добавить
     const [WatchNumb, setWatchNumb] = React.useState('');

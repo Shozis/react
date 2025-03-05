@@ -12,7 +12,6 @@ const MainPage = () => {
   let arr = arrayst.map(d => Number(d))
   let data = r.map(d => Number(d))
 
-
   let RLena = 0;
   let RSasha = 0;
 
