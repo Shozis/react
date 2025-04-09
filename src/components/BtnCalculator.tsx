@@ -1,5 +1,4 @@
-
-
+import React from "react";
 
 const BtnCalculator = () => {
     return <button
@@ -7,7 +6,6 @@ const BtnCalculator = () => {
             border: '1px solid #d00'
         }}
     >
-        Жми
     </button>
 }
 
