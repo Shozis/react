@@ -4,7 +4,7 @@ import SecondPage from '../pages/SecondPage';
 import ErrorPage from '../pages/ErrorPage';
 import Years from '../pages/Years';
 import Massive from '../pages/Massive';
-import Layout from '../pages/Layout';
+import Calculator from "../pages/calculator"
 
 const Router = () => {
   return (
@@ -14,7 +14,7 @@ const Router = () => {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/years" element={<Years />} />
         <Route path="/massive" element={<Massive />} />
-        <Route path='/layout' element={<Layout/>} />
+        <Route path='/calculator' element={<Calculator/>} />
     </Routes>
   );
 };
