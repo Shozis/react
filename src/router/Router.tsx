@@ -4,7 +4,7 @@ import SecondPage from '../pages/SecondPage';
 import ErrorPage from '../pages/ErrorPage';
 import Years from '../pages/Years';
 import Massive from '../pages/Massive';
-import Calculator from "../pages/calculator"
+import Calculator from "../pages/Calculator"
 
 const Router = () => {
   return (

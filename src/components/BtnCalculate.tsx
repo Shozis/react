@@ -1,14 +1,33 @@
-import React from "react";
 
 
-interface BtnCalculateProps{
-name : (number)
+interface BtnCalculateProps {
+    back: (value: number) => void
 }
+
+
 
 const BtnCalculate = (props: BtnCalculateProps) => {
-    return <button>
-        {props.name}
-    </button>
+    const name = (value: number) => {
+        props.back(value);
+    }
+    const arr = [];
 
+    for (let i = 0; i <= 10; i++) {
+        arr[i] = i
+    }
+
+
+    return <div>
+        {arr.map((arr, key) => (
+            <button
+                onClick={() => name(key)}
+                key={key}
+            >
+                {arr}
+            </button>
+        ))}
+    </div>
 }
+
+
 export default BtnCalculate;

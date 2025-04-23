@@ -1,16 +1,16 @@
-import React from "react";
+
 import BtnCalculate from "../components/BtnCalculate";
-
-const logic = () =>{
-
-}
 
 const Calculator = () => {
 
-    const a= 1;
-return <div>
-    asd
-</div>
+    const logic = (value: number) =>{
+        console.log(value)
+    }
+
+return <BtnCalculate 
+    back={logic}
+
+/>
 }
 
 export default Calculator;
