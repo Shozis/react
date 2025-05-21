@@ -6,6 +6,7 @@ import Years from '../pages/Years';
 import Massive from '../pages/Massive';
 import Calculator from "../pages/Calculator"
 import Applicate from '../pages/Applicate';
+import VendingMachine from '../pages/VendingMachine';
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
         <Route path="/massive" element={<Massive />} />
         <Route path='/calculator' element={<Calculator/>} />
         <Route path='/maket' element={<Applicate/>} />
+        <Route path='/food' element={<VendingMachine/>} />
     </Routes>
   );
 };
