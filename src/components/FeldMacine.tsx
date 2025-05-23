@@ -1,17 +1,18 @@
-import { Typography } from "@mui/material"
 
 
 
+import { TextField } from "@mui/material";
 
-interface FeldMacineProps {
-    place: (value: string) => void
-}
+ interface FeldMacineProps {
+     place: String
+ }
 
 
-const FeldMacine = () => {
- return <Typography>
-
- </Typography>   
+const FeldMacine = (props: FeldMacineProps) => {
+ return <TextField>
+    value={props.place}
+ </TextField>
+ 
 }
 
 export default FeldMacine;

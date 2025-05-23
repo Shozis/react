@@ -3,20 +3,26 @@ import NumbMachne from "../components/NumbMachne"
 
 
 import { Box, Typography } from "@mui/material"
-import { count } from "console"
+import FeldMacine from "../components/FeldMacine"
+
 
 
 
 const VendingMachine = () => {
-    const counter = (value: number) =>{
+
+
+    const [Watchcounter, setWatchcounter] = React.useState('');
+
+    const counter = (value: number) => {
+        setWatchcounter(Watchcounter + value.toString());
+
+        console.log(Watchcounter);
 
     }
 
-    const [Watchcounter, setWatchcounter] = React.useState(count);
-
-
     return <Box>
-        <NumbMachne count={counter}/>
+        <NumbMachne count={counter} />
+        <FeldMacine place={Watchcounter} />
     </Box>
 }
 
