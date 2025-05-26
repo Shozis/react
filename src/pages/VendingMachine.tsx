@@ -11,10 +11,11 @@ import FeldMacine from "../components/FeldMacine"
 const VendingMachine = () => {
 
 
-    const [Watchcounter, setWatchcounter] = React.useState('');
+    const [Watchcounter, setWatchcounter] = React.useState(0);
 
     const counter = (value: number) => {
-        setWatchcounter(Watchcounter + value.toString());
+        let str = Watchcounter.toString() + value.toString()
+        setWatchcounter(+str);
 
         console.log(Watchcounter);
 
