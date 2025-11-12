@@ -1,6 +1,3 @@
-
-
-
 import { TextField } from "@mui/material";
 
  interface FeldMacineProps {
