@@ -8,6 +8,7 @@ import Calculator from "../pages/Calculator"
 import Applicate from '../pages/Applicate';
 import VendingMachine from '../pages/VendingMachine';
 import Poradok from '../pages/Poradok'
+import Coder from '../pages/Coder';
 
 const Router = () => {
   return (
@@ -21,6 +22,7 @@ const Router = () => {
         <Route path='/maket' element={<Applicate/>} />
         <Route path='/food' element={<VendingMachine/>} />
         <Route path='/poradok' element={<Poradok/>} />
+        <Route path='/coder' element={<Coder/>} />
     </Routes>
   )
 }
