@@ -12,7 +12,7 @@ const BtnCalculate = (props: BtnCalculateProps) => {
     }
     const arr = [];
 
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= 9; i++) {
         arr[i] = i
     }
 
