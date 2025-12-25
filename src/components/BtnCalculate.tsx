@@ -1,3 +1,4 @@
+import { Box, Button, TextField } from "@mui/material";
 
 
 interface BtnCalculateProps {
@@ -17,16 +18,28 @@ const BtnCalculate = (props: BtnCalculateProps) => {
     }
 
 
-    return <div>
-        {arr.map((arr, key) => (
-            <button
-                onClick={() => name(key)}
-                key={key}
-            >
-                {arr}
-            </button>
-        ))}
-    </div>
+    return <Box>
+        <TextField sx={{
+            display: 'flex',
+            justifyContent: 'center'
+        }}></TextField>
+        <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column'
+        }}>
+            {arr.map((arr, key) => (
+                <Button sx={{
+                    border: 1
+                }}
+                    onClick={() => name(key)}
+                    key={key}
+                >
+                    {arr}
+                </Button>
+            ))}
+        </Box>
+    </Box>
 }
 
 
