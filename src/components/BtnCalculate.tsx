@@ -18,15 +18,19 @@ const BtnCalculate = (props: BtnCalculateProps) => {
     }
 
 
-    return <Box>
+    return <Box
+        sx={{
+            margin: '0 auto',
+            width: 100,
+        }}
+    >
         <TextField sx={{
-            display: 'flex',
-            justifyContent: 'center'
+            width: 100,
         }}></TextField>
         <Box sx={{
+            
             display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column'
+            justifyContent: 'center'
         }}>
             {arr.map((arr, key) => (
                 <Button sx={{
