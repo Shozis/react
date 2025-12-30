@@ -17,13 +17,8 @@ const Calculator = () => {
     }
 
     const result = () => {
-        const nums = counter.split(" ")
-        console.log(nums);
-        for (let i = 0; i < nums.length; i++) {
-            if(nums[i] % 2 === 0) {
-                
-            }
-        }
+        const nums = eval(counter);
+        setCounter(nums)
     }
 
 
