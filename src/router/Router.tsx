@@ -9,6 +9,7 @@ import Applicate from '../pages/Applicate';
 import VendingMachine from '../pages/VendingMachine';
 import Poradok from '../pages/Poradok'
 import Coder from '../pages/Coder';
+import Plotly from '../pages/Plotly';
 
 const Router = () => {
   return (
@@ -23,6 +24,7 @@ const Router = () => {
         <Route path='/food' element={<VendingMachine/>} />
         <Route path='/poradok' element={<Poradok/>} />
         <Route path='/coder' element={<Coder/>} />
+        <Route path='/Plotly' element={<Plotly/>} />
     </Routes>
   )
 }
